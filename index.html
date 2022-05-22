@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+	      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	      crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<title>Football Zone</title>
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">
+				<img src="image/Group8.png" alt="" height="82" width="164"/></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">My Favorite</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="booking/booking.html">Booking</a>
+					</li>
+				</ul>
+				<button type="button" class="btn btn-success me-md-5">Login</button>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 caption">
+				<h1><b>Welcome to <span style="color:#00C800">Football</span> Zone</b></h1>
+				<p>We bring you The Ultimate Website to find your favorite football field in Phnom Penh </p>
+				<div class="row height d-flex justify-content-center align-items-center">
+					<div class="col-md-8">
+						<div class="search">
+							<i class="fa fa-search"></i>
+							<input type="text" class="form-control" id="search-field" placeholder="Search field..." onkeyup="search()">
+							<button class="btn btn-success">Search</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 img">
+				<a href="#">
+					<img class="img-responsive img-hover" alt="" src="image/Home.png" height="700" width="700" >
+				</a>
+			</div>
+			<div class="justify-content-center statement">
+				<h2><b>Available field to play</b></h2>
+				<p>Football field collection for player</p>
+			</div>
+		</div>
+	</div>
+	<div class="background">
+		<div class="container" id="card-field">
+			<div class="row row-cols-1 row-cols-md-3 g-5">
+				<div class="col">
+					<div class="card" style="width: 25rem;">
+						<img src="image/Downtown.jpg" class="card-img-top" alt="Downtown">
+						<div class="card-body">
+							<h5 class="card-title">Down Town Sport</h5>
+							<div class="location pt-2">
+								<i class="bi bi-geo-alt"></i>
+								St 656, Khan Tuol Kork,Phnom Penh
+							</div>
+							<div class="telephone py-3">
+								<i class="bi bi-telephone"></i>
+								010 378 767
+							</div>
+							<div class="small-ratings">Rating:
+								<i class="fa fa-star rating-color"></i>
+								<i class="fa fa-star rating-color"></i>
+								<i class="fa fa-star rating-color"></i>
+								<i class="fa fa-star rating-color"></i>
+								<i class="fa fa-star"></i>
+							</div>
+							<a href="booking/booking.html" class="btn btn-success">Booking Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card" style="width: 25rem;">
+						<img src="image/Emperial.jpg" class="card-img-top" alt="Emperial">
+						<div class="card-body">
+							<h5 class="card-title">Emperial Sport Club</h5>
+							<div class="location pt-2">
+								<i class="bi bi-geo-alt"></i>
+								St 2004, Phnom Penh
+							</div>
+							<div class="telephone py-3">
+								<i class="bi bi-telephone "></i>
+								096 659 062
+							</div>
+							<div class="small-ratings">Rating:
+								<i class="fa fa-star rating-color"></i>
+								<i class="fa fa-star rating-color"></i>
+								<i class="fa fa-star rating-color"></i>
+								<i class="fa fa-star rating-color"></i>
+								<i class="fa fa-star"></i>
+							</div>
+							<a href="#" class="btn btn-success">Booking Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card" style="width: 25rem;">
+						<img src="image/Theblue.jpg" class="card-img-top" alt="Theblue">
+						<div class="card-body">
+							<h5 class="card-title">The Blue Sports Center</h5>
+							<div class="location pt-2">
+								<i class="bi bi-geo-alt"></i>
+								St 1986, Khan Sen Sok,Phnom Penh
+							</div>
+							<div class="telephone py-3">
+								<i class="bi bi-telephone "></i>
+								016 860 860
+							</div>
+							<div class="small-ratings">Rating:
+								<i class="fa fa-star rating-color"></i>
+								<i class="fa fa-star rating-color"></i>
+								<i class="fa fa-star rating-color"></i>
+								<i class="fa fa-star rating-color"></i>
+								<i class="fa fa-star rating-color"></i>
+							</div>
+							<a href="#" class="btn btn-success">Booking Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card" style="width: 25rem;">
+						<img src="image/KMH.jpg" class="card-img-top" alt="KMH">
+						<div class="card-body">
+							<h5 class="card-title">KMH Stadium</h5>
+							<div class="location pt-2">
+								<i class="bi bi-geo-alt"></i>
+								Veng Sreng Blvd, Phnom Pen
+							</div>
+							<div class="telephone py-3">
+								<i class="bi bi-telephone "></i>
+								017 303 920
+							</div>
+							<div class="small-ratings">Rating:
+								<i class="fa fa-star rating-color"></i>
+								<i class="fa fa-star rating-color"></i>
+								<i class="fa fa-star rating-color"></i>
+								<i class="fa fa-star rating-color"></i>
+								<i class="fa fa-star"></i>
+							</div>
+							<a href="#" class="btn btn-success">Booking Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card" style="width: 25rem;">
+						<img src="image/Platinum.jpg" class="card-img-top" alt="Platinum">
+						<div class="card-body">
+							<h5 class="card-title">Platinum Sports Center</h5>
+							<div class="location pt-2">
+								<i class="bi bi-geo-alt"></i>
+								Khan Chba Ampoeu, Phnom Penh
+							</div>
+							<div class="telephone py-3">
+								<i class="bi bi-telephone "></i>
+								012 826 720
+							</div>
+							<div class="small-ratings">Rating:
+								<i class="fa fa-star rating-color"></i>
+								<i class="fa fa-star rating-color"></i>
+								<i class="fa fa-star rating-color"></i>
+								<i class="fa fa-star rating-color"></i>
+								<i class="fa fa-star rating-color"></i>
+							</div>
+							<a href="#" class="btn btn-success">Booking Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card" style="width: 25rem;">
+						<img src="image/Champion.jpg" class="card-img-top" alt="Champion">
+						<div class="card-body">
+							<h5 class="card-title">Champion Sport Club</h5>
+							<div class="location pt-2">
+								<i class="bi bi-geo-alt"></i>
+								St 2004, Khan Sen Sok, Phnom Penh
+							</div>
+							<div class="telephone py-3">
+								<i class="bi bi-telephone "></i>
+								016 466 662
+							</div>
+							<div class="small-ratings">Rating:
+								<i class="fa fa-star rating-color"></i>
+								<i class="fa fa-star rating-color"></i>
+								<i class="fa fa-star rating-color"></i>
+								<i class="fa fa-star rating-color"></i>
+								<i class="fa fa-star"></i>
+							</div>
+							<a href="#" class="btn btn-success">Booking Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card" style="width: 25rem;">
+						<img src="image/Central.jpg" class="card-img-top" alt="Central">
+						<div class="card-body">
+							<h5 class="card-title">Central Park Sports Complex </h5>
+							<div class="location pt-2">
+								<i class="bi bi-geo-alt"></i>
+								Boengkak, Khan Daun Penh, Phnom Penh
+							</div>
+							<div class="telephone py-3">
+								<i class="bi bi-telephone "></i>
+								087 787 888
+							</div>
+							<div class="small-ratings">Rating:
+								<i class="fa fa-star rating-color"></i>
+								<i class="fa fa-star rating-color"></i>
+								<i class="fa fa-star rating-color"></i>
+								<i class="fa fa-star rating-color"></i>
+								<i class="fa fa-star rating-color"></i>
+							</div>
+							<a href="#" class="btn btn-success">Booking Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card" style="width: 25rem;">
+						<img src="image/Lighting.jpg" class="card-img-top" alt="Lighting">
+						<div class="card-body">
+							<h5 class="card-title">Sports Lighting Futsal</h5>
+							<div class="location pt-2">
+								<i class="bi bi-geo-alt"></i>
+								AEON MALL SEN SOK CITY, Phnom Penh
+							</div>
+							<div class="telephone py-3">
+								<i class="bi bi-telephone "></i>
+								023 911 888
+							</div>
+							<div class="small-ratings">Rating:
+								<i class="fa fa-star rating-color"></i>
+								<i class="fa fa-star rating-color"></i>
+								<i class="fa fa-star rating-color"></i>
+								<i class="fa fa-star rating-color"></i>
+								<i class="fa fa-star"></i>
+							</div>
+							<a href="#" class="btn btn-success">Booking Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="col pb-5">
+					<div class="card" style="width: 25rem;">
+						<img src="image/Goal.jpg" class="card-img-top" alt="Goal">
+						<div class="card-body">
+							<h5 class="card-title">Goal Sport</h5>
+							<div class="location pt-2">
+								<i class="bi bi-geo-alt"></i>
+								Borey Phnom Penh Tmey, Phnom Penh
+							</div>
+							<div class="telephone py-3">
+								<i class="bi bi-telephone "></i>
+								016 220 202
+							</div>
+							<div class="small-ratings">Rating:
+								<i class="fa fa-star rating-color"></i>
+								<i class="fa fa-star rating-color"></i>
+								<i class="fa fa-star rating-color"></i>
+								<i class="fa fa-star rating-color"></i>
+								<i class="fa fa-star"></i>
+							</div>
+							<a href="#" class="btn btn-success">Booking Now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="bg-success text-center text-lg-start text-white">
+		<div class="container p-5">
+			<div class="row">
+				<div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+					<h4 class="text fw-bold py-4">Contact Us</h4>
+					<p>+855  966506158</p>
+					<p>+855  911289302</p>
+					<p>+855  690378923</p>
+				</div>
+				<div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+					<h4 class="text fw-bold py-4">About Us</h4>
+					<p>##provide  field to play for player</p>
+					<p>enhance marketing for club</p>
+				</div>
+				<div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+					<h4 class="text fw-bold py-4">Address</h4>
+					<p>#Stem Building , RUPP</p>
+					<p>Phnom Penh</p>
+				</div>
+				<div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+					<h4 class="text fw-bold py-4">Follow Us</h4>
+					<div class="social-links">
+						<a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+						<a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+						<a href="#" class="twitter"><i class="bx bxl-telegram"></i></a>
+						<a href="#" class="google"><i class="bx bxl-google"></i></a>
+						<a href="#" class="github"><i class="bx bxl-github"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="text-right p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+			@2022.<span style="color:#00C800">Footballzone</span> is built by ITE_Team 10
+			<a class="text-dark" href="#"></a>
+			<div class="pull-right d-flex">
+				<b>FE, RUPP</b>
+			</div>
+		</div>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+	</script>
+	<script src="scripts/app.js"></script>
+</body>
+</html>
